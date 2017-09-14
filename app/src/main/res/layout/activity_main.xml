@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.task2.MainActivity">
+
+    <Button
+        android:id="@+id/btnPREP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Підготуватись до загрузки"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btnSTOP" />
+
+    <Button
+        android:id="@+id/btnDWL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузити"
+        android:layout_alignBaseline="@+id/btnPREP"
+        android:layout_alignBottom="@+id/btnPREP"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnPREP"
+        android:layout_below="@+id/btnPREP"
+        android:layout_marginTop="32dp"
+        android:text="пауза" />
+
+    <Button
+        android:id="@+id/btnSTOP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnPause"
+        android:layout_centerHorizontal="true"
+        android:text="Стоп" />
+
+    <Button
+        android:id="@+id/btnST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статус"
+        android:layout_alignBaseline="@+id/btnSTOP"
+        android:layout_alignBottom="@+id/btnSTOP"
+        android:layout_alignStart="@+id/btnDWL" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnST"
+        android:layout_below="@+id/btnPause"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="53dp"
+        android:max="20" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/pb"
+        android:layout_below="@+id/pb"
+        android:layout_marginTop="29dp"
+        android:text="Завантаженно 0/20"
+        android:textSize="24sp" />
+
+</RelativeLayout>
